@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User List</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="popup hidden" id="popup">
+      <div class="popup-container" id="popupContainer">
+        <a href="#" class="popup-close" id="popupClose">X</a>
+        <div class="popup-content" id="popupContent">
+          <img class="popup-user-picture" src="#" alt="user photo" />
+          <h3 class="popup-header" id="popupHeader"></h3>
+          <ul class="popup-data-list" id="popupDataList">
+            <li class="popup-data-street" id="popupDataStreet"></li>
+            <li class="popup-data-city" id="popupDataCity"></li>
+            <li class="popup-data-state" id="popupDataState"></li>
+            <li class="popup-data-email" id="popupDataEmail"></li>
+            <li class="popup-data-phone" id="popupDataPhone"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header class="header" id="header">
+      <div class="header-container" id="headerContainer">
+        <h1 class="header-heading">User List</h1>
+      </div>
+    </header>
+
+    <main class="main" id="main">
+      <div class="main-container" id="mainContainer">
+        <div class="select-container">
+          <label>
+            <span class="choose-order">Choose order</span>
+            <select class="order-select" size="1" id="orderSelect">
+              <option class="order-select-option" selected>ordered</option>
+              <option class="order-select-option">revers</option>
+            </select>
+          </label>
+        </div>
+        <table class="main-table" id="mainTable">
+          <tr class="main-table-heading-row" id="mainTableHeadingRow">
+            <th class="main-table-heading">Photo</th>
+            <th class="main-table-heading">Name</th>
+          </tr>
+        </table>
+      </div>
+      <div class="preloader-wrapper">
+        <img
+          class="preloader"
+          id="preloader"
+          src="https://i.postimg.cc/66SGMVs5/mcru-ajax-loader.gif"
+        />
+      </div>
+    </main>
+    <template class="item-template">
+      <tr class="main-table-row" id="mainTableRow">
+        <td class="main-table-item-userpic" id="mainTableItemUserpic">
+          <img class="item-user-picture" src="#" alt="user avatar" />
+        </td>
+        <td class="main-table-item-username" id="mainTableItemUsername"></td>
+      </tr>
+    </template>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
