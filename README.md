@@ -13,8 +13,7 @@
 
 - тип: GET
 - ссылка:
-  http://api.randomuser.me/1.0/?results=50&nat=gb,us&inc=gender,name,location,email,phon
-  e,picture
+  http://api.randomuser.me/1.0/?results=50&nat=gb,us&inc=gender,name,location,email,phone,picture
 - формат ответа:
 
 ```javascript
